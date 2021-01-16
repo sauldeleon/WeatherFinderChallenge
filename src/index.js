@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 
 import { BaseButton } from './components/BaseButton'
+import { BaseInput } from './components/BaseInput'
 
 const { REACT_APP_OPENWEATHERMAP_API_KEY } = process.env
 
@@ -59,8 +60,8 @@ class App extends React.Component {
                 </div>
                 <div className="col-7 form-container">
                   <form onSubmit={this.getWeather}>
-                    <input type="text" name="city" placeholder="Madrid" />
-                    <input type="text" name="country" placeholder="es" />
+                    <BaseInput name={'city'} placeholder="Madrid" />
+                    <BaseInput name={'country'} placeholder="es" />
                     <BaseButton label="Get Weather" />
                   </form>
                   <div className="weather__info">
