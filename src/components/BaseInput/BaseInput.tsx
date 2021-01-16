@@ -7,7 +7,7 @@ interface BaseInputProps {
   /**input placeholder */
   placeholder: string
   /**onChange handler */
-  onChange: (event: React.FormEvent<HTMLInputElement>) => void
+  onChange?: (event: React.FormEvent<HTMLInputElement>) => void
 }
 
 export const BaseInput: React.FC<BaseInputProps> = ({ name, placeholder, onChange }) => (
