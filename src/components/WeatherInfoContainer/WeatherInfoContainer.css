@@ -1,0 +1,13 @@
+.weather__info {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.weather__error {
+  color: #f16051;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
